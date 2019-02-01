@@ -5,7 +5,7 @@ class Layout extends Component {
 	constructor() {
 		super();
 		this.state = {
-			name: 'Joe'
+			name: 'Brandon'
 		};
 	}
 	clickedBtn = () => {};
@@ -16,17 +16,17 @@ class Layout extends Component {
 				<div className="Aligner">
 					<div className="Aligner-item">
 						<img src="/img/logo.png" />
-						<h1>Dev-Starter-Kit</h1>
+						<h1></h1>
 						<div className="menu">
 							<ul>
 								<li>
-									<a href="http://starterkit.codingphase.com" target="new">
+									<a href="" target="new">
 										Documentation
 									</a>
 								</li>
 								<li>
-									<a href="http://www.codingphase.com" target="new">
-										CodingPhase.Com
+									<a href="" target="new">
+										
 									</a>
 								</li>
 							</ul>
@@ -35,13 +35,13 @@ class Layout extends Component {
 						<br />
 						<a
 							className="github-button"
-							href="https://github.com/codingphasedotcom/Starter-Kit-2019"
+							href="#"
 							data-icon="octicon-star"
 							data-style="mega"
-							data-count-href="/codingphasedotcom/rocky/stargazers"
-							data-count-api="/repos/codingphasedotcom/rocky#stargazers_count"
-							data-count-aria-label="# stargazers on GitHub"
-							aria-label="Star codingphasedotcom/rocky on GitHub"
+							data-count-href=""
+							data-count-api=""
+							data-count-aria-label="#"
+							aria-label=""
 						>
 							Star
 						</a>

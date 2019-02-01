@@ -26,6 +26,7 @@ gulp.task('watch-proxy', ['webpack', 'styles', 'browser-sync-proxy'], () => {
 		.watch([
 			'./public/**/*',
 			'./public/*',
+			'./public/views/**/*',
 			'!public/js/**/.#*js',
 			'!public/css/**/.#*css'
 		])
