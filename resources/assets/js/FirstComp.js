@@ -16,7 +16,7 @@ class Layout extends Component {
 				<div className="Aligner">
 					<div className="Aligner-item">
 						<img src="/img/logo.png" />
-						<h1></h1>
+						<h1 />
 						<div className="menu">
 							<ul>
 								<li>
@@ -25,9 +25,7 @@ class Layout extends Component {
 									</a>
 								</li>
 								<li>
-									<a href="" target="new">
-										
-									</a>
+									<a href="" target="new" />
 								</li>
 							</ul>
 						</div>

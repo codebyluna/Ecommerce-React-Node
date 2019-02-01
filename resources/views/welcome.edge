@@ -2,19 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Hello Adonis</title>
-  {{ style('style') }}
+  <title>FreshGear</title>
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-  <section>
-    <div class="logo"></div>
-    <div class="title"></div>
-    <div class="subtitle">
-      <p>AdonisJs simplicity will make you feel confident about your code</p>
-      <p>
-        Don't know where to start? Read the <a href="https://adonisjs.com/docs">documentation</a>.
-      </p>
+  <header>
+    <div class="logo">
+      freshgear
+    </div>
+    <div class="menu">
+      <a href="#">About</a>
+      <a href="#">New Arrival</a>
+      <a href="#">Cart</a>
+    </div>
+  </header>
+  <section class="content-area home-page">
+    <div class="top-section">
+      <div class="product">
+        <div class="circle">
+          <img src="img/products/adidas-yeezy-boost-350-white.png" alt="Yeezy-Boost-350">
+        </div>
+      </div>
+      <div class="titles">
+        <h3>Yeezy</h3>
+        <h1>Boost 350</h1>
+      </div>
     </div>
   </section>
+
+
+  <script src="js/dist/vendors~FirstComp.js"></script>
+  <script src="js/dist/FirstComp.js"></script>
 </body>
 </html>

@@ -12,21 +12,21 @@ gulp.task('default', ['webpack', 'styles', 'browser-sync'], () => {
 		.watch([
 			'./public/**/*',
 			'./public/*',
-			'./public/views/**/*',
+			'./resources/views/**/*',
 			'!public/js/**/.#*js',
 			'!public/css/**/.#*css'
 		])
 		.on('change', reload);
 });
 
-gulp.task('watch-proxy', ['webpack', 'styles', 'browser-sync-proxy'], () => {
-	gulp.watch('./assets/scss/**/*', ['styles']);
-	gulp.watch('./assets/js/**/*', ['webpack']);
+gulp.task('watch-proxy', ['styles', 'browser-sync-proxy'], () => {
+	gulp.watch('./resources/assets/scss/**/*', ['styles']);
+	// gulp.watch('./resources/assets/js/**/*', ['webpack']);
 	gulp
 		.watch([
 			'./public/**/*',
 			'./public/*',
-			'./public/views/**/*',
+			'./resources/views/**/*',
 			'!public/js/**/.#*js',
 			'!public/css/**/.#*css'
 		])
@@ -35,7 +35,7 @@ gulp.task('watch-proxy', ['webpack', 'styles', 'browser-sync-proxy'], () => {
 
 gulp.task('styles', () => {
 	gulp
-		.src('assets/scss/**/*.scss')
+		.src('resources/assets/scss/**/*.scss')
 		.pipe(
 			sass({
 				outputStyle: 'compressed'
